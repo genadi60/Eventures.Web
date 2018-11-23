@@ -1,0 +1,71 @@
+﻿@model Eventures.Web.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+<div class="container d-flex justify-content-around mb-3">
+    <form asp-controller="Account" asp-action="Register" method="post" class="width-half">
+            <h1 class="text-center">Register</h1>
+            <hr class="hr-4-eventures" />
+            <div class="form-group d-flex justify-content-between">
+                <div class="form-group width-eventures">
+                    <div class="d-flex justify-content-around font-weight-bold">
+                        <label asp-for="Username">Username</label>
+                    </div>
+                    <input asp-for="Username" type="text" class="form-control" placeholder="Username...">
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="form-group width-eventures">
+                    <div class="d-flex justify-content-around font-weight-bold">
+                        <label asp-for="Email">Email</label>
+                    </div>
+                    <input asp-for="Email" type="email" class="form-control" placeholder="Email...">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group d-flex justify-content-between">
+                <div class="form-group width-eventures">
+                    <div class="d-flex justify-content-around font-weight-bold">
+                        <label asp-for="Password">Password</label>
+                    </div>
+                        <input asp-for="Password" type="password" class="form-control" placeholder="Password...">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                <div class="form-group width-eventures">
+                    <div class="d-flex justify-content-around font-weight-bold">
+                        <label asp-for="ConfirmPassword">Confirm Password</label>
+                    </div>
+                        <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Confirm Password...">
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+            </div>
+            <hr class="hr-4-eventures" />
+        <div class="form-group d-flex justify-content-between">
+            <div class="form-group width-eventures">
+                <div class="d-flex justify-content-around font-weight-bold">
+                    <label asp-for="FirstName">First name</label>
+                </div>
+                <input asp-for="FirstName" type="text" class="form-control" placeholder="First name...">
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group width-eventures">
+                <div class="d-flex justify-content-around font-weight-bold">
+                    <label asp-for="LastName">Last name</label>
+                </div>
+                <input asp-for="LastName" type="text" class="form-control" placeholder="Last name...">
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="d-flex justify-content-around font-weight-bold">
+                <label asp-for="UCN">UCN</label>
+            </div>
+            <input asp-for="UCN" type="text" class="form-control" placeholder="Universal Citizen Number...">
+            <span asp-validation-for="UCN" class="text-danger"></span>
+        </div>
+            <hr class="hr-4-eventures" />
+            <div class="d-flex justify-content-around">
+                <button asp-controller="Account" asp-action="Register" type="submit" class="btn eventures-bg-color">Register</button>
+            </div>
+        </form>
+    
+</div>

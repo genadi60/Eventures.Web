@@ -1,0 +1,30 @@
+﻿@model Eventures.Web.ViewModels.AllEventsViewModel
+@{
+    ViewData["Title"] = "All Events";
+}
+<div class="container">
+    <h2 class="text-center font-weight-bold">@ViewData["Title"]</h2>
+    <hr class="hr-4-eventures" />
+    <div class="row">
+        <div class="col col-1 font-weight-bold">#</div>
+        <div class="col col-3 font-weight-bold">Name</div>
+        <div class="col col-3 font-weight-bold">Start</div>
+        <div class="col col-3 font-weight-bold">End</div>
+        <div class="col col-2 font-weight-bold">Place</div>
+    </div>
+
+    @{ var number = 1;}
+    @foreach (var eventModel in Model.Events)
+    {
+        <hr/>
+    <div class="row">
+        <div class="col col-1 font-weight-bold">@number</div>
+        <div class="col col-3">@eventModel.Name</div>
+        <div class="col col-3">@eventModel.Start</div>
+        <div class="col col-3">@eventModel.End</div>
+        <div class="col col-2">@eventModel.Place</div>
+    </div>
+        number++;
+    }
+    <hr class="hr-4-eventures" />
+</div>

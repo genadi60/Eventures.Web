@@ -1,0 +1,18 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<EventuresUser> SignInManager
+@inject UserManager<EventuresUser> UserManager
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="dropdown">
+        <div class="btn dropdown-toggle nav-link font-weight-bold" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Events
+        </div>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+            <a asp-controller="Events" asp-action="All" class="dropdown-item">All Events</a>
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-controller="Events" asp-action="Create" class="dropdown-item">Create Event</a>
+            }
+        </div>
+    </div>
+}

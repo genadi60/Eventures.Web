@@ -1,0 +1,63 @@
+﻿@model Eventures.Web.ViewModels.EventViewModel
+@{
+    ViewData["Title"] = "Create Event";
+}
+<div class="container d-flex justify-content-around">
+    <form asp-controller="Events" asp-action="Create" method="post" class="w-50">
+        <h1 class="text-center">@ViewData["Title"]</h1>
+        <hr class="hr-4-eventures" />
+        <div class="form-group d-flex justify-content-between">
+            <div class="form-group width-eventures">
+                <div class="d-flex justify-content-around font-weight-bold">
+                    <label asp-for="Name">Name</label>
+                </div>
+                <input asp-for="Name" type="text" class="form-control" placeholder="Name...">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group width-eventures">
+                <div class="d-flex justify-content-around font-weight-bold">
+                    <label asp-for="Place">Place</label>
+                </div>
+                <input asp-for="Place" type="text" class="form-control" placeholder="Place...">
+                <span asp-validation-for="Place" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group d-flex justify-content-between">
+            <div class="form-group width-eventures">
+                <div class="d-flex justify-content-around font-weight-bold">
+                    <label asp-for="Start">Start</label>
+                </div>
+                <input asp-for="Start" type="text" class="form-control" placeholder="Start...">
+                <span asp-validation-for="Start" class="text-danger"></span>
+            </div>
+            <div class="form-group width-eventures">
+                <div class="d-flex justify-content-around font-weight-bold">
+                    <label asp-for="End">End</label>
+                </div>
+                <input asp-for="End" type="text" class="form-control" placeholder="End...">
+                <span asp-validation-for="End" class="text-danger"></span>
+            </div>
+        </div>
+        <hr class="hr-4-eventures" />
+        <div class="form-group d-flex justify-content-between">
+            <div class="form-group width-eventures">
+                <div class="d-flex justify-content-around font-weight-bold">
+                    <label asp-for="TotalTickets">TotalTickets</label>
+                </div>
+                <input asp-for="TotalTickets" type="text" class="form-control" placeholder="TotalTickets...">
+                <span asp-validation-for="TotalTickets" class="text-danger"></span>
+            </div>
+            <div class="form-group width-eventures">
+                <div class="d-flex justify-content-around font-weight-bold">
+                    <label asp-for="PricePerTicket">PricePerTicket</label>
+                </div>
+                <input asp-for="PricePerTicket" type="text" class="form-control" placeholder="PricePerTicket...">
+                <span asp-validation-for="PricePerTicket" class="text-danger"></span>
+            </div>
+        </div>
+        <hr class="hr-4-eventures" />
+        <div class="d-flex justify-content-around">
+            <button asp-controller="Events" asp-action="Create" type="submit" class="btn eventures-bg-color">Create Event</button>
+        </div>
+    </form>
+</div>

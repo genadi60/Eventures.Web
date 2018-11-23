@@ -1,0 +1,122 @@
+.app {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: #06a5af; /*#F8F8FF;*/
+}
+
+.width-eventures {
+    width: 47%;
+}
+
+textarea {
+    resize: none;
+}
+
+.eventures-bg-color {
+    background-color: #AFEEEE;
+    color: #000000;
+}
+
+.braun-bg-color {
+    background-color: #e57d37;
+    color: #000000;
+}
+
+.nav-link-braun {
+    color: #e57d37;
+}
+
+.nav-link {
+    color: #000000;
+}
+
+.nav-link-eventures {
+    color: #AFEEEE;
+}
+
+.nav-link-dark {
+    color: #1167f4;
+}
+
+.text-eventures {
+    color: #AFEEEE;
+}
+
+footer {
+    position: relative;
+}
+
+.hr-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 4px solid #000000;
+}
+
+.hr-4-eventures {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 4px solid #AFEEEE;
+}
+
+.hr-4-braun {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 4px solid #e57d37;
+}
+
+.hr-3-black {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 3px solid #000000;
+}
+
+.hr-3-eventures {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 3px solid #AFEEEE;
+}
+
+.hr-3-braun {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 3px solid #e57d37;
+}
+
+.hr-2 {
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     border: 0;
+     border-top: 2px solid #000000;
+ }
+
+.hr-2-eventures {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid #AFEEEE;
+}
+
+.hr-2-braun {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid #e57d37;
+}
+
+
+
+.hr-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #000000;
+}

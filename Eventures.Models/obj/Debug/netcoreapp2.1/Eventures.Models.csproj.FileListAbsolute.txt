@@ -1,0 +1,45 @@
+C:\Users\Генади\Desktop\TestFolder\Eventures.Web-Eventures.Web\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csproj.CoreCompileInputs.cache
+C:\Users\Генади\Desktop\TestFolder\Eventures.Web-Eventures.Web\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfoInputs.cache
+C:\Users\Генади\Desktop\TestFolder\Eventures.Web-Eventures.Web\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfo.cs
+C:\Users\Генади\Desktop\TestFolder\Eventures.Web-Eventures.Web\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.deps.json
+C:\Users\Генади\Desktop\TestFolder\Eventures.Web-Eventures.Web\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.dll
+C:\Users\Генади\Desktop\TestFolder\Eventures.Web-Eventures.Web\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.pdb
+C:\Users\Генади\Desktop\TestFolder\Eventures.Web-Eventures.Web\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.dll
+C:\Users\Генади\Desktop\TestFolder\Eventures.Web-Eventures.Web\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.pdb
+C:\Users\Генади\Desktop\TestFolder\Eventures.Web-Eventures.Web\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csprojAssemblyReference.cache
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Enventures.Web.App\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.deps.json
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Enventures.Web.App\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.dll
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Enventures.Web.App\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.pdb
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csprojAssemblyReference.cache
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csproj.CoreCompileInputs.cache
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfoInputs.cache
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfo.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.dll
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.pdb
+H:\Enventures.Web.App\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.deps.json
+H:\Enventures.Web.App\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.dll
+H:\Enventures.Web.App\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.pdb
+H:\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csproj.CoreCompileInputs.cache
+H:\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfoInputs.cache
+H:\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfo.cs
+H:\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.dll
+H:\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.pdb
+H:\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csprojAssemblyReference.cache
+F:\Enventures.Web.App\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.deps.json
+F:\Enventures.Web.App\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.dll
+F:\Enventures.Web.App\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.pdb
+F:\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csprojAssemblyReference.cache
+F:\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csproj.CoreCompileInputs.cache
+F:\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfoInputs.cache
+F:\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfo.cs
+F:\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.dll
+F:\Enventures.Web.App\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.pdb
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.deps.json
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.dll
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.pdb
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csproj.CoreCompileInputs.cache
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfoInputs.cache
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfo.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.dll
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.pdb
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csprojAssemblyReference.cache
