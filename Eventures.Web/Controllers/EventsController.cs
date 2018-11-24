@@ -38,6 +38,11 @@ namespace Eventures.Web.Controllers
         {
             if (!User.IsInRole("Admin"))
             {
+                return RedirectToAction("Index", "Home");
+            }
+
+            if (!ModelState.IsValid)
+            {
                 return View(model);
             }
 

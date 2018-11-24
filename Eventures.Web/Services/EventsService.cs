@@ -27,8 +27,8 @@ namespace Eventures.Web.Services
                 Id = Guid.NewGuid().ToString(),
                 Name = model.Name,
                 Place = model.Place,
-                Start = DateTime.Parse(model.Start),
-                End = DateTime.Parse(model.End),
+                Start = model.Start,
+                End = model.End,
                 TotalTickets = model.TotalTickets,
                 PricePerTicket = model.PricePerTicket
             };
@@ -47,8 +47,8 @@ namespace Eventures.Web.Services
                     Id = e.Id,
                     Name = e.Name,
                     Place = e.Place,
-                    Start = e.Start.ToString("dd-MMM-yy HH:mm"),
-                    End = e.End.ToString("dd-MMM-yy HH:mm"),
+                    Start = e.Start,
+                    End = e.End,
                     TotalTickets = e.TotalTickets,
                     PricePerTicket = e.PricePerTicket
                 })

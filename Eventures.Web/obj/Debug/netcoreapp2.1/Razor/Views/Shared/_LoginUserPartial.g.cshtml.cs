@@ -78,7 +78,7 @@ using Microsoft.AspNetCore.Identity;
             ");
             EndContext();
             BeginContext(476, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7e1eb867d594b879b3ae19d928ae209", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f664a059c654dd9871fa2c86b71be4b", async() => {
                 BeginContext(542, 10, true);
                 WriteLiteral("All Events");
                 EndContext();
@@ -112,7 +112,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("                ");
             EndContext();
             BeginContext(631, 85, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c60debfd52154fe5a72ef9fa5f34e88e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d5af677c47d948e48809fdd71b406045", async() => {
                 BeginContext(700, 12, true);
                 WriteLiteral("Create Event");
                 EndContext();

@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Eventures.Web.Controllers
 {
-    public class AccountController : Controller
+    public class AccountsController : Controller
     {
         private readonly SignInManager<EventuresUser> _signIn;
 
@@ -17,7 +17,7 @@ namespace Eventures.Web.Controllers
 
         private readonly IAccountServices _accountServices;
 
-        public AccountController(SignInManager<EventuresUser> signIn, 
+        public AccountsController(SignInManager<EventuresUser> signIn, 
             ILogger<EventuresUser> logger, IAccountServices accountServices)
         {
             _signIn = signIn;
@@ -33,16 +33,23 @@ namespace Eventures.Web.Controllers
         [HttpPost]
         public IActionResult Login(LoginViewModel loginModel)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                bool isLogged = _accountServices.DoLogin(loginModel);
+                return View(loginModel);
+            
+            }
+
+            bool isLogged = _accountServices.DoLogin(loginModel);
 
                 if (!isLogged)
                 {
-                    return View();
+                    var errorModel = new ErrorViewModel
+                    {
+                        RequestId = "Username or Password incorrect."
+                    };
+                    return View("Error", errorModel);
                 }
-            }
-            
+  
             return RedirectToAction("Index", "Home");
         }
 
@@ -54,19 +61,25 @@ namespace Eventures.Web.Controllers
         [HttpPost]
         public IActionResult Register(RegisterViewModel model)
         {
-            if (ModelState.IsValid && !_signIn.IsSignedIn(User))
+            if (_signIn.IsSignedIn(User))
             {
-               bool isCreated = _accountServices.Create(model);
-
-                if (!isCreated)
-                {
-                    return View();
-                }
-
-                return View("~/Views/Account/Registered.cshtml");
+                return RedirectToAction("Index", "Home");
             }
 
-            return View();
+            
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            bool isCreated = _accountServices.Create(model);
+
+            if (!isCreated)
+            {
+                return View(model);
+            }
+
+            return View("~/Views/Accounts/Registered.cshtml");
         }
 
         public async Task<IActionResult> Logout()

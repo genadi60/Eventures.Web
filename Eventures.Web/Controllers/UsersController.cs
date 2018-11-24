@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Eventures.Web.Controllers
 {
-    public class UserController : Controller
+    public class UsersController : Controller
     {
         private readonly SignInManager<EventuresUser> _signInManager;
 
@@ -17,7 +17,7 @@ namespace Eventures.Web.Controllers
 
         private readonly IUserServices _userServices;
 
-        public UserController(SignInManager<EventuresUser> signInManager, IUserServices userServices,RoleManager<IdentityRole> roleManager)
+        public UsersController(SignInManager<EventuresUser> signInManager, IUserServices userServices,RoleManager<IdentityRole> roleManager)
         {
             _signInManager = signInManager;
             _userServices = userServices;

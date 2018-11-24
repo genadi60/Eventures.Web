@@ -22,7 +22,7 @@ namespace Eventures.Web.Controllers
                 return View(); 
             }
             
-            return RedirectToAction("Index", "User");
+            return RedirectToAction("Index", "Users");
         }
     }
 }
