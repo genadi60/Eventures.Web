@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Eventures.Models;
+using Eventures.Web.InputModels;
 using Microsoft.AspNetCore.Identity;
 
 namespace Eventures.Web.ViewModels
@@ -20,6 +21,6 @@ namespace Eventures.Web.ViewModels
 
         public string RoleId { get; set; }
 
-        public virtual ICollection<EventViewModel> Events { get; set; }
+        public virtual ICollection<EventCreateModel> Events { get; set; }
     }
 }

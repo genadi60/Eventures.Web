@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Eventures.Web.ViewModels
+namespace Eventures.Web.InputModels
 {
-    public class RegisterViewModel
+    public class AccountRegisterModel
     {
         [Required]
         [StringLength(20, MinimumLength = 3)]
@@ -32,6 +32,7 @@ namespace Eventures.Web.ViewModels
         [Display(Name = "Password")]
         public string Password { get; set; }
 
+        [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]

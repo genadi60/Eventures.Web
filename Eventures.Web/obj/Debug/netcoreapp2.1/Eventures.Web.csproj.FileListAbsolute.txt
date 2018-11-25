@@ -21,8 +21,6 @@ C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Event
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Eventures.Web.TagHelpers.output.cache
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Eventures.Web.RazorCoreGenerate.cache
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
-C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Events\AllEvents.g.cshtml.cs
-C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Events\Create.g.cshtml.cs
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
@@ -30,8 +28,6 @@ C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Event
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginMenuPartial.g.cshtml.cs
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginUserPartial.g.cshtml.cs
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
-C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Users\AdminHome.g.cshtml.cs
-C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Users\UserHome.g.cshtml.cs
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Eventures.Web.RazorTargetAssemblyInfo.cache
@@ -40,10 +36,14 @@ C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Event
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Eventures.Web.csproj.CopyComplete
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Eventures.Web.dll
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Eventures.Web.pdb
-C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\bin\Debug\netcoreapp2.1\wwwroot\css\bootstrap.min.css
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\bin\Debug\netcoreapp2.1\wwwroot\css\reset-css.css
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\bin\Debug\netcoreapp2.1\wwwroot\css\style.css
-C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Accounts\Login.g.cshtml.cs
-C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Accounts\Logout.g.cshtml.cs
-C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Accounts\Register.g.cshtml.cs
-C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Accounts\Registered.g.cshtml.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Logout.g.cshtml.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Registered.g.cshtml.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Event\AllEvents.g.cshtml.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Event\Create.g.cshtml.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\User\AdminHome.g.cshtml.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\User\UserHome.g.cshtml.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\bin\Debug\netcoreapp2.1\wwwroot\css\bootstrap.min.css

@@ -1,5 +1,6 @@
 ﻿using Eventures.Data;
 using Eventures.Web.Filters;
+using Eventures.Web.InputModels;
 using Eventures.Web.Services.Contracts;
 using Eventures.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -7,16 +8,16 @@ using Microsoft.Extensions.Logging;
 
 namespace Eventures.Web.Controllers
 {
-    public class EventsController : Controller
+    public class EventController : Controller
     {
-        private readonly IEventsService _eventsService;
+        private readonly IEventServices _eventServices;
         private readonly EventuresDbContext _context;
-        private readonly ILogger<EventsController> _logger;
+        private readonly ILogger<EventController> _logger;
 
-        public EventsController(IEventsService eventsService, EventuresDbContext
-            context, ILogger<EventsController> logger)
+        public EventController(IEventServices eventServices, EventuresDbContext
+            context, ILogger<EventController> logger)
         {
-            _eventsService = eventsService;
+            _eventServices = eventServices;
             _context = context;
             _logger = logger;
         }
@@ -34,7 +35,7 @@ namespace Eventures.Web.Controllers
 
         [TypeFilter(typeof(AdminCreateEventActionFilter))]
         [HttpPost]
-        public IActionResult Create(EventViewModel model)
+        public IActionResult Create(EventCreateModel model)
         {
             if (!User.IsInRole("Admin"))
             {
@@ -46,7 +47,7 @@ namespace Eventures.Web.Controllers
                 return View(model);
             }
 
-            if (!_eventsService.Create(model))
+            if (!_eventServices.Create(model))
             {
                 return View(model);
             }
@@ -59,14 +60,14 @@ namespace Eventures.Web.Controllers
         
         public IActionResult All()
         {
-            var collection = _eventsService.All();
+            var collection = _eventServices.All();
 
             var allEventsViewModel = new AllEventsViewModel
             {
                 Events = collection
             };
             
-            return View("~/Views/Events/AllEvents.cshtml", allEventsViewModel);
+            return View("~/Views/Event/AllEvents.cshtml", allEventsViewModel);
         }
     }
 }

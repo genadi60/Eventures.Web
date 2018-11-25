@@ -86,7 +86,7 @@
             
             services.AddScoped<ILogger<EventuresUser>, Logger<EventuresUser>>();
             services.AddScoped<IAccountServices, AccountServices>();
-            services.AddScoped<IEventsService, EventsService>();
+            services.AddScoped<IEventServices, EventServices>();
             services.AddScoped<IUserServices, UserServices>();
 
             services.AddLogging(lb =>

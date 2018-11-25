@@ -1,9 +1,9 @@
-﻿@model Eventures.Web.ViewModels.LoginViewModel
+﻿@model Eventures.Web.InputModels.AccountLoginModel
 @{
     ViewData["Title"] = "Log in";
 }
 <div class="container d-flex justify-content-around mb-3">
-    <form asp-controller="Accounts" asp-action="Login" class="w-50" method="post">
+    <form asp-controller="Account" asp-action="Login" class="w-50" method="post">
         <h1 class="text-center">@ViewData["Title"]</h1>
         <hr class="hr-4-eventures" />
         <div class="form-group">
@@ -33,7 +33,7 @@
             <a href="/###" class="text-center nav-link-dark">Forgot your password?</a>
         </div>
         <div class="d-flex justify-content-around">
-            <a asp-controller="Accounts" asp-action="Register" class="text-center nav-link-dark mt-2">Register as a new user.</a>
+            <a asp-controller="Account" asp-action="Register" class="text-center nav-link-dark mt-2">Register as a new user.</a>
         </div>
     </form>
 </div>

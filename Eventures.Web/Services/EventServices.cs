@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using Eventures.Data;
 using Eventures.Models;
+using Eventures.Web.InputModels;
 using Eventures.Web.Services.Contracts;
 using Eventures.Web.ViewModels;
 
 namespace Eventures.Web.Services
 {
-    public class EventsService : IEventsService
+    public class EventServices : IEventServices
     {
         private readonly EventuresDbContext _context;
-        public EventsService(EventuresDbContext context)
+        public EventServices(EventuresDbContext context)
         {
             _context = context;
         }
 
-        public bool Create(EventViewModel model)
+        public bool Create(EventCreateModel model)
         {
             if (model == null)
             {
@@ -47,12 +48,14 @@ namespace Eventures.Web.Services
                     Id = e.Id,
                     Name = e.Name,
                     Place = e.Place,
-                    Start = e.Start,
-                    End = e.End,
+                    Start = e.Start.ToString("dd-MMM-yy HH:mm"),
+                    End = e.End.ToString("dd-MMM-yy HH:mm"),
                     TotalTickets = e.TotalTickets,
                     PricePerTicket = e.PricePerTicket
                 })
                 .ToList();
         }
     }
+
+    
 }

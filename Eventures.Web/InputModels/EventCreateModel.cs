@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Eventures.Web.ViewModels
+namespace Eventures.Web.InputModels
 {
-    public class EventViewModel
+    public class EventCreateModel
     {
-        [Required]
         public string Id { get; set; }
 
         [Required]
@@ -19,10 +15,12 @@ namespace Eventures.Web.ViewModels
         public string Place { get; set; }
 
         [Required]
-        public string Start { get; set; }
+        [DataType(DataType.DateTime)]
+        public DateTime Start { get; set; }
 
         [Required]
-        public string End { get; set; }
+        [DataType(DataType.DateTime)]
+        public DateTime End { get; set; }
 
         [Required]
         [Range(1, Int32.MaxValue)]

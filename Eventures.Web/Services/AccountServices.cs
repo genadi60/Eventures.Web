@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Eventures.Models;
+using Eventures.Web.InputModels;
 using Eventures.Web.Services.Contracts;
 using Eventures.Web.ViewModels;
 using Microsoft.AspNetCore.Identity;
@@ -23,7 +24,7 @@ namespace Eventures.Web.Services
             _logger = logger;
         }
 
-        public bool Create(RegisterViewModel model)
+        public bool Create(AccountRegisterModel model)
         {
             model.Role = _signInManager.UserManager.Users.Any() ? null : "Admin";
 
@@ -51,7 +52,7 @@ namespace Eventures.Web.Services
             return true;
         }
 
-        public bool DoLogin(LoginViewModel model)
+        public bool DoLogin(AccountLoginModel model)
         {
             var user = _signInManager.UserManager.Users.FirstOrDefault(u => u.UserName == model.Username);
 

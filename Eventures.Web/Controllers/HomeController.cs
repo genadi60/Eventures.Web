@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-using Eventures.Models;
-using Eventures.Web.ViewModels;
+﻿using Eventures.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,7 +20,7 @@ namespace Eventures.Web.Controllers
                 return View(); 
             }
             
-            return RedirectToAction("Index", "Users");
+            return RedirectToAction("Index", "User");
         }
     }
 }

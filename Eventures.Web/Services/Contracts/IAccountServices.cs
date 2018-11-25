@@ -1,11 +1,12 @@
-﻿using Eventures.Web.ViewModels;
+﻿using Eventures.Web.InputModels;
+using Eventures.Web.ViewModels;
 
 namespace Eventures.Web.Services.Contracts
 {
     public interface IAccountServices
     {
-        bool Create(RegisterViewModel model);
+        bool Create(AccountRegisterModel model);
 
-        bool DoLogin(LoginViewModel model);
+        bool DoLogin(AccountLoginModel model);
     }
 }

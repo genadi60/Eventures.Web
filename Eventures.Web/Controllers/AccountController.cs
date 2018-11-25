@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Eventures.Models;
+using Eventures.Web.InputModels;
 using Eventures.Web.Services.Contracts;
 using Eventures.Web.ViewModels;
 using Microsoft.AspNetCore.Identity;
@@ -9,7 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Eventures.Web.Controllers
 {
-    public class AccountsController : Controller
+    public class AccountController : Controller
     {
         private readonly SignInManager<EventuresUser> _signIn;
 
@@ -17,7 +18,7 @@ namespace Eventures.Web.Controllers
 
         private readonly IAccountServices _accountServices;
 
-        public AccountsController(SignInManager<EventuresUser> signIn, 
+        public AccountController(SignInManager<EventuresUser> signIn, 
             ILogger<EventuresUser> logger, IAccountServices accountServices)
         {
             _signIn = signIn;
@@ -31,15 +32,15 @@ namespace Eventures.Web.Controllers
         }
         
         [HttpPost]
-        public IActionResult Login(LoginViewModel loginModel)
+        public IActionResult Login(AccountLoginModel accountLoginModel)
         {
             if (!ModelState.IsValid)
             {
-                return View(loginModel);
+                return View(accountLoginModel);
             
             }
 
-            bool isLogged = _accountServices.DoLogin(loginModel);
+            bool isLogged = _accountServices.DoLogin(accountLoginModel);
 
                 if (!isLogged)
                 {
@@ -59,7 +60,7 @@ namespace Eventures.Web.Controllers
         }
         
         [HttpPost]
-        public IActionResult Register(RegisterViewModel model)
+        public IActionResult Register(AccountRegisterModel model)
         {
             if (_signIn.IsSignedIn(User))
             {
@@ -79,7 +80,7 @@ namespace Eventures.Web.Controllers
                 return View(model);
             }
 
-            return View("~/Views/Accounts/Registered.cshtml");
+            return View("~/Views/Account/Registered.cshtml");
         }
 
         public async Task<IActionResult> Logout()

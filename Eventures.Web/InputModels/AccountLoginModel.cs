@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Eventures.Web.ViewModels
+namespace Eventures.Web.InputModels
 {
-    public class LoginViewModel
+    public class AccountLoginModel
     {
         [Required]
         [StringLength(20, MinimumLength = 3)]

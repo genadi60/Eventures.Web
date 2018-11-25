@@ -1,9 +1,9 @@
-﻿@model Eventures.Web.ViewModels.EventViewModel
+﻿@model Eventures.Web.InputModels.EventCreateModel
 @{
     ViewData["Title"] = "Create Event";
 }
 <div class="container d-flex justify-content-around">
-    <form asp-controller="Events" asp-action="Create" method="post" class="w-50">
+    <form asp-controller="Event" asp-action="Create" method="post" class="w-50">
         <h1 class="text-center">@ViewData["Title"]</h1>
         <hr class="hr-4-eventures" />
         <div class="form-group d-flex justify-content-between">
@@ -57,7 +57,7 @@
         </div>
         <hr class="hr-4-eventures" />
         <div class="d-flex justify-content-around">
-            <button asp-controller="Events" asp-action="Create" type="submit" class="btn eventures-bg-color">Create Event</button>
+            <button asp-controller="Event" asp-action="Create" type="submit" class="btn eventures-bg-color">Create Event</button>
         </div>
     </form>
 </div>

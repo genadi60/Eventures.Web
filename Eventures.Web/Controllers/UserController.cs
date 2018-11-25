@@ -1,15 +1,12 @@
-﻿using System;
-using System.Linq;
-using Eventures.Data;
+﻿using System.Linq;
 using Eventures.Models;
 using Eventures.Web.Services.Contracts;
-using Eventures.Web.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Eventures.Web.Controllers
 {
-    public class UsersController : Controller
+    public class UserController : Controller
     {
         private readonly SignInManager<EventuresUser> _signInManager;
 
@@ -17,7 +14,7 @@ namespace Eventures.Web.Controllers
 
         private readonly IUserServices _userServices;
 
-        public UsersController(SignInManager<EventuresUser> signInManager, IUserServices userServices,RoleManager<IdentityRole> roleManager)
+        public UserController(SignInManager<EventuresUser> signInManager, IUserServices userServices,RoleManager<IdentityRole> roleManager)
         {
             _signInManager = signInManager;
             _userServices = userServices;
@@ -43,10 +40,10 @@ namespace Eventures.Web.Controllers
 
             if (role != null && role.Name == "Admin")
             {
-                return View("~/Views/Users/AdminHome.cshtml", userViewModel);
+                return View("~/Views/User/AdminHome.cshtml", userViewModel);
             }
 
-            return View("~/Views/Users/UserHome.cshtml", userViewModel);
+            return View("~/Views/User/UserHome.cshtml", userViewModel);
         }
     }
 }
