@@ -47,3 +47,6 @@ C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Event
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\User\AdminHome.g.cshtml.cs
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\User\UserHome.g.cshtml.cs
 C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\bin\Debug\netcoreapp2.1\wwwroot\css\bootstrap.min.css
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Order\Create.g.cshtml.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\User\MyEvents.g.cshtml.cs
+C:\Users\genad\OneDrive\Работен плот\ASP.NET Core\Eventures.Web\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Order\AllOrders.g.cshtml.cs

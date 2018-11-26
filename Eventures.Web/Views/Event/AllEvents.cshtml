@@ -4,27 +4,35 @@
 }
 <div class="container">
     <h2 class="text-center font-weight-bold">@ViewData["Title"]</h2>
-    <hr class="hr-4-eventures" />
+    <hr class="hr-4-eventures"/>
     <div class="row">
         <div class="col col-1 font-weight-bold">#</div>
         <div class="col col-3 font-weight-bold">Name</div>
-        <div class="col col-3 font-weight-bold">Start</div>
-        <div class="col col-3 font-weight-bold">End</div>
-        <div class="col col-2 font-weight-bold">Place</div>
+        <div class="col col-2 font-weight-bold">Start</div>
+        <div class="col col-2 font-weight-bold">End</div>
+        <div class="col col-4 font-weight-bold">Actions</div>
     </div>
 
     @{ var number = 1;}
     @foreach (var eventModel in Model.Events)
     {
         <hr/>
-    <div class="row">
-        <div class="col col-1 font-weight-bold">@number</div>
-        <div class="col col-3">@eventModel.Name</div>
-        <div class="col col-3">@eventModel.Start</div>
-        <div class="col col-3">@eventModel.End</div>
-        <div class="col col-2">@eventModel.Place</div>
-    </div>
+        <div class="row">
+            <div class="col col-1 font-weight-bold">@number</div>
+            <div class="col col-3">@eventModel.Name</div>
+            <div class="col col-2">@eventModel.Start</div>
+            <div class="col col-2">@eventModel.End</div>
+            <form asp-controller="Order" asp-action="Create" method="post" asp-route-data="id=@eventModel.Id">
+                <div class="col col-4 d-flex justify-content-start">
+                    <label asp-for="@eventModel.Tickets" class="font-weight-bold mt-1"></label>
+                    <input asp-for="@eventModel.Tickets" name="@eventModel.Id" type="text" class="ml-1"/>
+                    <button asp-controller="Order" asp-action="Create" type="submit"  class="btn eventures-bg-color ml-1">Order</button>
+                </div>
+            </form>
+</div>
+
         number++;
     }
-    <hr class="hr-4-eventures" />
+    <hr class="hr-4-eventures"/>
+    
 </div>

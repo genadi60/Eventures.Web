@@ -21,6 +21,6 @@ namespace Eventures.Web.ViewModels
 
         public string RoleId { get; set; }
 
-        public virtual ICollection<EventCreateModel> Events { get; set; }
+        public virtual ICollection<OrderViewModel> Events { get; set; } = new List<OrderViewModel>();
     }
 }

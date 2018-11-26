@@ -15,5 +15,7 @@ namespace Eventures.Models
 
         public string RoleId { get; set; }
         public virtual  IdentityRole Role { get; set; }
+
+        public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
     }
 }

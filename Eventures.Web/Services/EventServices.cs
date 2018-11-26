@@ -48,8 +48,8 @@ namespace Eventures.Web.Services
                     Id = e.Id,
                     Name = e.Name,
                     Place = e.Place,
-                    Start = e.Start.ToString("dd-MMM-yy HH:mm"),
-                    End = e.End.ToString("dd-MMM-yy HH:mm"),
+                    Start = e.Start.ToString("dd-MMM-yy HH:mm:ss"),
+                    End = e.End.ToString("dd-MMM-yy HH:mm:ss"),
                     TotalTickets = e.TotalTickets,
                     PricePerTicket = e.PricePerTicket
                 })

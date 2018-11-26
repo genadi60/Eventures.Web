@@ -88,6 +88,7 @@
             services.AddScoped<IAccountServices, AccountServices>();
             services.AddScoped<IEventServices, EventServices>();
             services.AddScoped<IUserServices, UserServices>();
+            services.AddTransient<IOrderServices, OrderServices>();
 
             services.AddLogging(lb =>
             {

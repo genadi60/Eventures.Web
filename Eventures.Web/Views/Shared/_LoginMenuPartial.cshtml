@@ -6,7 +6,14 @@
     <form asp-controller="Account" asp-action="Logout" method="post" class="d-flex justify-content-between">
         <ul class="navbar-collapse collapse nav navbar-nav">
             <li>
-                <span>Hello @User.Identity.Name!</span>
+                @if (User.IsInRole("Admin"))
+                {
+                    <span>Hello Admin!</span>
+                }
+                else
+                {
+                    <span>Hello @User.Identity.Name!</span>
+                }
             </li>
             <li>
                 <a asp-controller="Account" asp-action="Logout" id="@UserManager.GetUserId(User)" class="font-weight-bold nav-link">Logout</a>

@@ -11,6 +11,7 @@
                 </div>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu">
                     <a asp-controller="Event" asp-action="All" class="dropdown-item">All Events</a>
+                    <a asp-controller="User" asp-action="MyEvents" class="dropdown-item">My Events</a>
                     @if (User.IsInRole("Admin"))
                     {
                         <a asp-controller="Event" asp-action="Create" class="dropdown-item">Create Event</a>
@@ -18,5 +19,18 @@
                 </div>
             </div>
         </li>
+        @if (User.IsInRole("Admin"))
+        {
+            <li>
+                <div class="dropdown">
+                    <div class="btn dropdown-toggle nav-link font-weight-bold" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Orders
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                        <a asp-controller="Order" asp-action="All" class="dropdown-item">All Orders</a>
+                    </div>
+                </div>
+            </li>
+        }
     </ul>
 }

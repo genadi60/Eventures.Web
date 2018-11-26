@@ -31,5 +31,7 @@ namespace Eventures.Web.ViewModels
         [Required]
         [Range(typeof(decimal), minimum:"0.01", maximum:"79228162514264337593543950335")]
         public decimal PricePerTicket { get; set; }
+
+        public string Tickets { get; set; }
     }
 }

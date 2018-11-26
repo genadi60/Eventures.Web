@@ -19,5 +19,7 @@ namespace Eventures.Models
         public int TotalTickets { get; set; }
 
         public decimal PricePerTicket { get; set; }
+
+        public ICollection<Order> Orders { get; set; } = new List<Order>();
     }
 }

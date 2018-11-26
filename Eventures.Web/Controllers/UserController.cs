@@ -45,5 +45,25 @@ namespace Eventures.Web.Controllers
 
             return View("~/Views/User/UserHome.cshtml", userViewModel);
         }
+
+        public IActionResult MyEvents()
+        {
+            if (!_signInManager.IsSignedIn(User))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            var userId = _signInManager.UserManager.GetUserId(User);
+
+            var userViewModel = _userServices.GetUser(userId);
+
+            var role = _roleManager.Roles.FirstOrDefault(r => r.Id == userViewModel.RoleId);
+
+            if (userId == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            return View("~/Views/User/MyEvents.cshtml", userViewModel);
+        }
     }
 }
