@@ -1,5 +1,4 @@
 ﻿using Eventures.Web.InputModels;
-using Eventures.Web.ViewModels;
 
 namespace Eventures.Web.Services.Contracts
 {

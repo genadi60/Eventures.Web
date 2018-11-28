@@ -1,4 +1,8 @@
-﻿namespace Eventures.Web
+﻿using Eventures.Web.Middlewares;
+using Eventures.Web.Services;
+using Eventures.Web.Services.Contracts;
+
+namespace Eventures.Web
 {
     using System;
     using Microsoft.AspNetCore.Builder;
@@ -13,9 +17,7 @@
 
     using Data;
     using Models;
-    using Services;
     using Utilities;
-    using Services.Contracts;
     using System.Globalization;
     using Microsoft.AspNetCore.Localization;
 
@@ -96,7 +98,10 @@
                 lb.AddFile(o => o.RootPath = AppContext.BaseDirectory);
             });
             
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
         }
 
@@ -125,6 +130,8 @@
             app.UseCookiePolicy();
 
             app.UseAuthentication();
+
+            app.UseMiddleware<CustomExceptionHandlingMiddleware>();
 
             app.UseMvc(routes =>
             {

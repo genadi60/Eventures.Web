@@ -3,7 +3,6 @@ using System.Linq;
 using Eventures.Models;
 using Eventures.Web.InputModels;
 using Eventures.Web.Services.Contracts;
-using Eventures.Web.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 

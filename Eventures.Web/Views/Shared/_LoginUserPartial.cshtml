@@ -3,9 +3,9 @@
 @inject UserManager<EventuresUser> UserManager
 @if (SignInManager.IsSignedIn(User))
 {
-    <ul class="nav navbar-nav">
-        <li>
-            <div class="dropdown">
+    @*<ul class="nav navbar-nav">*@
+       
+            <li class="dropdown">
                 <div class="btn dropdown-toggle nav-link font-weight-bold" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Events
                 </div>
@@ -17,20 +17,20 @@
                         <a asp-controller="Event" asp-action="Create" class="dropdown-item">Create Event</a>
                     }
                 </div>
-            </div>
-        </li>
-        @if (User.IsInRole("Admin"))
+            </li>
+        
+        if (User.IsInRole("Admin"))
         {
-            <li>
-                <div class="dropdown">
+            
+                <li class="dropdown">
                     <div class="btn dropdown-toggle nav-link font-weight-bold" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Orders
                     </div>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu">
                         <a asp-controller="Order" asp-action="All" class="dropdown-item">All Orders</a>
                     </div>
-                </div>
-            </li>
+                </li>
+            
         }
-    </ul>
+    @*</ul>*@
 }

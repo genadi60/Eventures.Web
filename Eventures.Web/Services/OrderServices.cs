@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Eventures.Data;
 using Eventures.Models;
 using Eventures.Web.InputModels;
@@ -45,6 +44,11 @@ namespace Eventures.Web.Services
                     OrderedOn = o.OrderedOn.ToString("dd-MMM-yy HH:mm:ss")
                 })
                 .ToList();
+        }
+
+        public bool ById(string id)
+        {
+            return _context.Events.Any(e => e.Id.Equals(id));
         }
     }
 }

@@ -20,13 +20,18 @@ textarea {
     color: #000000;
 }
 
+.danger-bg-color {
+    background-color: #dc3545;
+    color: #000000;
+}
+
 .braun-bg-color {
     background-color: #e57d37;
     color: #000000;
 }
 
 .nav-link-braun {
-    color: #e57d37;
+    color: #dc3545;
 }
 
 .nav-link {
@@ -67,7 +72,7 @@ footer {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 4px solid #e57d37;
+    border-top: 4px solid #dc3545
 }
 
 .hr-3-black {
