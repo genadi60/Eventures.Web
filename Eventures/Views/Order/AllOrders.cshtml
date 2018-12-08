@@ -1,0 +1,28 @@
+﻿@model Eventures.ViewModels.AllOrdersViewModel
+@{
+    ViewData["Title"] = "All Orders";
+}
+<div class="container">
+    <h2 class="text-center font-weight-bold">@ViewData["Title"]</h2>
+    <hr class="hr-4-eventures" />
+    <div class="row">
+        <div class="col col-1 font-weight-bold">#</div>
+        <div class="col col-4 font-weight-bold">Event</div>
+        <div class="col col-3 font-weight-bold">Customer</div>
+        <div class="col col-4 font-weight-bold">Ordered On</div>
+    </div>
+
+    @{ var number = 1;}
+    @foreach (var orderModel in Model.Orders)
+    {
+        <hr />
+        <div class="row">
+            <div class="col col-1 font-weight-bold">@number</div>
+            <div class="col col-4">@orderModel.EventName</div>
+            <div class="col col-3">@orderModel.CustomerName</div>
+            <div class="col col-4">@orderModel.OrderedOn</div>
+        </div>
+        number++;
+    }
+    <hr class="hr-4-eventures" />
+</div>

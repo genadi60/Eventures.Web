@@ -1,0 +1,36 @@
+﻿@model Eventures.ViewModels.AllEventsViewModel
+@{
+    ViewData["Title"] = "All Events";
+    var number = 1;
+}
+<div class="container">
+    <h2 class="text-center font-weight-bold">@ViewData["Title"]</h2>
+    <hr class="hr-4-eventures" />
+    <div class="row">
+        <div class="col col-1 font-weight-bold">#</div>
+        <div class="col col-3 font-weight-bold">Name</div>
+        <div class="col col-2 font-weight-bold">Start</div>
+        <div class="col col-2 font-weight-bold">End</div>
+        <div class="col col-4 font-weight-bold">Actions</div>
+    </div>
+    @foreach (var Event in Model.Events)
+    {
+        <hr />
+        <div class="row">
+            <div class="col col-1 font-weight-bold">@number</div>
+            <div class="col col-3">@Event.Name</div>
+            <div class="col col-2">@Event.Start</div>
+            <div class="col col-2">@Event.End</div>
+            <div class="col col-4">
+                <form asp-controller="Order" asp-action="Create" method="post">
+                    <label for="tickets" class="font-weight-bold mr-1">Tickets</label>
+                    <input id="tickets" name="tickets" type="text" />
+                    <input name="eventId" type="hidden" value="@Event.Id" />
+                    <input type="submit" value="Order" class="ml-1 eventures-bg-color rounded" />
+                </form>
+            </div>
+        </div>
+        number++;
+    }
+    <hr class="hr-4-eventures" />
+</div>
